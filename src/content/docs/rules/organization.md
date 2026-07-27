@@ -4,7 +4,7 @@ description: An overview of MCRL's structure.
 ---
 There are 7 leagues for different skill levels. League 7 is a special league for players who can't beat the game in 30 minutes. Players are assigned to a league based on their peak elo, fastest completion, average completion, forfeit rate, and anything else the admins know about.
 
-Higher leagues play more seeds as it doesn't take as long. The time limit, number of seeds, and approximate duration of the event are listed here. The seeds are checked before so there will be no seed changes.
+Higher leagues play more seeds as it doesn't take as long. The time limit, number of seeds, and approximate duration of the event are listed here.
 
 | League | Time limit | Seeds | Duration |
 | ------ | ---------- | ----- | -------- |
@@ -15,12 +15,3 @@ Higher leagues play more seeds as it doesn't take as long. The time limit, numbe
 | 5      | 25 minutes | 5     | 2:20     |
 | 6      | 30 minutes | 5     | 2:45     |
 | 7      | 60 minutes | 2     | 2:10     |
-
-The seed distribution for each league is listed here. No buried treasure seeds in leagues 5 and 6. No bucket completion ruined portals in league 6. There will always be at least 1 of each included seed type.
-
-| Leagues | Seeds | Ship / BT | Village / DT | RP |
-| ------- | ----- | --------- | ------------ | -- |
-| 1, 2, 3 | 8     | 3         | 3            | 2  |
-| 4       | 6     | 2         | 3            | 1  |
-| 5, 6    | 5     | 1 (ship)  | 3            | 1  |
-| 7       | 2     | 0         | 2            | 0  |
