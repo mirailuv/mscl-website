@@ -7,8 +7,15 @@ At the end of each week, we promote and relegate players to ensure that the leag
 
 ## How it works
 
-Based on the total points earned by each player in a week, we promote and relegate players. The exact number of players promoted and relegated is based on the number of players in each league. Currently, we promote top 10% of players from each league and relegate bottom 10% of players from each league.
+Players are listed on the leaderboard by total number of points. In most leagues, the top 15% are promoted and the bottom 15% are relegated, except for league 1 where bottom 20% are relegated. This is rounded to the nearest whole number.
+
+So for example, if 25 people played, the number of promotions and relegations would be:
+> 25 * 0.15 = 3.75 ≈ 4.
+
+Then the top 4 players would move to the higher league and the bottom 4 would move to the lower league. You can not be promoted from league 1 and you can not be relegated from league 6.
+
+In league 7, a player is promoted if they complete one of the seeds under 20 minutes, or complete both with an average time under 30 minutes.
 
 ## Tie breaks
 
-Tie breaks are decided by the avarage time among all matches played that week.
+Tiebreak is average time. DNFs are counted as time limit. If you have no completions, number of seeds played is used.

@@ -1,13 +1,13 @@
 ---
 title: League Bot Commands
-description: A list of all MSCL bot commands.
+description: A list of all MCRL bot commands.
 ---
 
 This bot is mostly created to simplify the work of the hosts and admins. However it also handles some important and not that important player related commands.
 
 ## Functionality
 
-This bot requires specific roles in order to categorize people who call commands. Players should have the role “League X” with X being the number (1-6). Any player without the proper League X role (for example, a League 2 player attempting to call a command in a League 1 competition) will be denied access.
+This bot requires specific roles in order to categorize people who call commands. Players should have the role “League X” with X being the number (1-7). Any player without the proper League X role (for example, a League 2 player attempting to call a command in a League 1 competition) will be denied access.
 
 ## Commands
 
@@ -31,7 +31,7 @@ Use Case: To unregister
 
 ## Score Related Commands
 
-`/l` - Displays the leaderboard which shows rankings, total points, and average time. Players are split by dashes to show who is at risk of demotion, who may be promoted, and who stays in the current league. Also shows status, if the competition is ongoing or not.
+`/lb` - Displays the leaderboard which shows rankings, total points, and average time. Players are split by dashes to show who is at risk of demotion, who may be promoted, and who stays in the current league. Also shows status, if the competition is ongoing or not.
 Use Case: Shows information about the match.
 
 `/s[seed]` - Shows standings for the seed, which includes rankings, time, and points gained.
