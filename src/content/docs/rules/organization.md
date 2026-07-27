@@ -1,19 +1,26 @@
 ---
 title: How is the event organized?
-description: An overview of MSCL's structure.
+description: An overview of MCRL's structure.
 ---
-The event is organized into 7 leagues based on skill levels. Players are seeded into these leagues according to their Peak Elo, fastest completion time, average completion time and forfeit rate which are compared to the league's average.
+There are 7 leagues for different skill levels. League 7 is a special league for players who can't beat the game in 30 minutes. Players are assigned to a league based on their peak elo, fastest completion, average completion, forfeit rate, and anything else the admins know about.
 
-| League | Matches | Time Limits |
-| ------ | ------- | ----------- |
-| 1      | 8       | 13 minutes  |
-| 2      | 8       | 15 minutes  |
-| 3      | 8       | 17 minutes  |
-| 4      | 7       | 20 minutes  |
-| 5      | 6       | 25 minutes  |
-| 6      | 5       | 30 minutes  |
-| 7      | 2       | 60 minutes  |
+Higher leagues play more seeds as it doesn't take as long. The time limit, number of seeds, and approximate duration of the event are listed here. The seeds are checked before so there will be no seed changes.
 
-Each week, all players in a league play a set number of matches against other players in the same league. Higher leagues can afford to play more matches, while lower leagues play fewer matches. The exact number of matches are listed above.
+| League | Time limit | Seeds | Duration |
+| ------ | ---------- | ----- | -------- |
+| 1      | 13 minutes | 8     | 2:00     |
+| 2      | 15 minutes | 8     | 2:20     |
+| 3      | 17 minutes | 8     | 2:35     |
+| 4      | 20 minutes | 6     | 2:20     |
+| 5      | 25 minutes | 5     | 2:20     |
+| 6      | 30 minutes | 5     | 2:45     |
+| 7      | 60 minutes | 2     | 2:10     |
 
-League 4-7 won't play buried treasure and League 7 will also not play ruined portal.
+The seed distribution for each league is listed here. No buried treasure seeds in leagues 5 and 6. No bucket completion ruined portals in league 6. There will always be at least 1 of each included seed type.
+
+| Leagues | Seeds | Ship / BT | Village / DT | RP |
+| ------- | ----- | --------- | ------------ | -- |
+| 1, 2, 3 | 8     | 3         | 3            | 2  |
+| 4       | 6     | 2         | 3            | 1  |
+| 5, 6    | 5     | 1 (ship)  | 3            | 1  |
+| 7       | 2     | 0         | 2            | 0  |
