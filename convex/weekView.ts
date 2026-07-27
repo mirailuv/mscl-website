@@ -1,5 +1,6 @@
 import { v } from "convex/values"
 import { query, type QueryCtx } from "./_generated/server"
+import { compareWeekStandingRegistrations } from "./lib/weekStandings"
 
 async function getCompetitionByWeekAndLeague(
   ctx: QueryCtx,
@@ -76,20 +77,10 @@ export const getWeekStandings = query({
       )
       .collect()
 
-    registrations.sort((a, b) => {
-      const pointsDiff = b.totalPoints - a.totalPoints
-      if (pointsDiff !== 0) return pointsDiff
-
-      const averageTimeDiff =
-        (a.averageTimeMs ?? Number.POSITIVE_INFINITY) -
-        (b.averageTimeMs ?? Number.POSITIVE_INFINITY)
-      if (averageTimeDiff !== 0) return averageTimeDiff
-
-      return a.playerIgn.localeCompare(b.playerIgn)
-    })
+    registrations.sort(compareWeekStandingRegistrations)
 
     return registrations.map((registration, index) => ({
-      rank: index + 1,
+      rank: registration.averageTimeMs === null ? null : index + 1,
       playerId: registration.playerId,
       name: registration.playerIgn,
       totalPoints: registration.totalPoints,

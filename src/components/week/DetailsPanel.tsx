@@ -24,7 +24,7 @@ export function DetailsPanel({
   playerId: string | null
   matchId: string | null
   rankedMatchId: string | null
-  playerStats: { name: string; totalPoints: number; rank: number } | null
+  playerStats: { name: string; totalPoints: number; rank: number | null } | null
   showBorder?: boolean
 }) {
   if (playerId && weekNumber !== null && leagueTier !== null && playerStats) {
@@ -78,7 +78,7 @@ function PlayerDetails({
   weekNumber: number
   leagueTier: number
   playerId: Id<"players">
-  stats: { name: string; totalPoints: number; rank: number }
+  stats: { name: string; totalPoints: number; rank: number | null }
 }) {
   const placements = useQuery(api.weekView.getPlayerWeekPlacements, {
     weekNumber,
@@ -104,9 +104,11 @@ function PlayerDetails({
     <div className="flex flex-col font-minecraft">
       <div className="mb-6 flex flex-col gap-2 border-b border-border/50 pb-6">
         <div className="flex items-center gap-3">
-          <span className="text-xl font-bold text-muted-foreground">
-            #{stats.rank}
-          </span>
+          {stats.rank !== null && (
+            <span className="text-xl font-bold text-muted-foreground">
+              #{stats.rank}
+            </span>
+          )}
           <a
             className="text-xl tracking-widest text-foreground hover:underline"
             href={`https://mcsrranked.com/stats/${stats.name}`}

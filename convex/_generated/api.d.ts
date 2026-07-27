@@ -16,6 +16,7 @@ import type * as lib_readModels from "../lib/readModels.js";
 import type * as lib_registrationAverage from "../lib/registrationAverage.js";
 import type * as lib_utils from "../lib/utils.js";
 import type * as lib_validators from "../lib/validators.js";
+import type * as lib_weekStandings from "../lib/weekStandings.js";
 import type * as migrations from "../migrations.js";
 import type * as playerStats from "../playerStats.js";
 import type * as players from "../players.js";
@@ -39,6 +40,7 @@ declare const fullApi: ApiFromModules<{
   "lib/registrationAverage": typeof lib_registrationAverage;
   "lib/utils": typeof lib_utils;
   "lib/validators": typeof lib_validators;
+  "lib/weekStandings": typeof lib_weekStandings;
   migrations: typeof migrations;
   playerStats: typeof playerStats;
   players: typeof players;
